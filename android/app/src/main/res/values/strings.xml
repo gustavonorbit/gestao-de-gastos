@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Application display name (user-facing). Kept intentionally simple and
+         separate from applicationId/bundle identifier so it's safe to change. -->
+    <string name="app_name">Gestão de Gastos</string>
+</resources>

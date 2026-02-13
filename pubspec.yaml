@@ -1,0 +1,79 @@
+name: educa_plus
+description: Educa+ — app mobile offline-first para professores
+publish_to: 'none'
+version: 0.1.0
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+
+  # Open external apps / email
+  url_launcher: ^6.1.7
+
+  # Routing
+  go_router: ^17.0.1
+
+  # State management
+  flutter_riverpod: ^3.2.0
+
+  # SQLite / Drift
+  drift: ^2.7.0
+  sqflite: ^2.2.8+4
+  # Include native sqlite3 binaries for Android/iOS when using sqlite3/drift
+  sqlite3_flutter_libs: ^0.5.7
+  path_provider: ^2.0.15
+  path: ^1.8.2
+
+  # Persistence for small preferences like accessibility settings
+  shared_preferences: ^2.2.0
+
+  # JSON and serialization
+  json_annotation: ^4.8.0
+  freezed_annotation: ^3.1.0
+
+  # Utilities
+  intl: ^0.20.2
+  excel: ^4.0.6
+  share_plus: ^12.0.1
+
+  # Photo import (offline OCR)
+  image_picker: ^1.2.1
+  google_mlkit_text_recognition: ^0.15.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # App icon generation
+  flutter_launcher_icons: ^0.14.4
+
+  # Code generation
+  build_runner: ^2.4.6
+  drift_dev: ^2.7.0
+  json_serializable: ^6.6.1
+  freezed: ^3.2.4
+
+  # Linting
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon_ensinaJa5.png"
+  remove_alpha_ios: true
+  adaptive_icon_background: "#0A2540"
+  adaptive_icon_foreground: "assets/icon_ensinaJa5.png"
+
+dependency_overrides:
+  win32: ^5.15.0
